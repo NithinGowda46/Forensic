@@ -18,7 +18,7 @@ $value = $_SESSION['value'];
 
   $password = $_POST['password'];
   $password = mysqli_real_escape_string($con, $password);
-  $password = MD5($password);
+  
 
   $contact = $_POST['contact'];
   $contact = mysqli_real_escape_string($con, $contact);

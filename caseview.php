@@ -51,8 +51,6 @@ $susp_r = mysqli_fetch_array($run_susp);
 
 
 
-
-
 $fire = "SELECT *
 			FROM FIREARMS
 			WHERE CASE_ID = '" . $viewcase . "' ";
@@ -134,10 +132,13 @@ $known_r = mysqli_fetch_array($run_known);
 								<label class="col-form-label tab"> Officer Id : <?php echo $cases_r[1] ?> </label>							
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Status : <?php echo $cases_r[2] ?></label>
+								<label class="col-form-label tab"> Date : <?php echo $cases_r[2] ?></label>
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Address : <?php echo $cases_r[3] ?> </label>
+								<label class="col-form-label tab"> Status : <?php echo $cases_r[3] ?></label>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label tab"> Address : <?php echo $cases_r[4] ?> </label>
 						</div>
 						
 		            </div>
@@ -155,17 +156,12 @@ $known_r = mysqli_fetch_array($run_known);
 								
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Lab Id : <?php echo $evi_r[1] ?></label>
+								<label class="col-form-label tab"> Lab Id : <?php echo $evi_r[3] ?></label>
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Case Id : <?php echo $evi_r[2] ?></label>
+								<label class="col-form-label tab"> Case Id : <?php echo $evi_r[4] ?></label>
 							</div>
-							<div class="form-group row">
-								<label class="col-form-label tab"> Date : <?php echo $evi_r[3] ?></label>
-							</div>
-							<div class="form-group row">
-								<label class="col-form-label tab"> Processing Method : <?php echo $evi_r[4] ?></label>
-							</div>
+							
 					
 		        </section> 
 		        
@@ -176,7 +172,6 @@ $known_r = mysqli_fetch_array($run_known);
 							<div class="form-group row">
 								<label class="col-form-label tab"> Suspect Id : <?php echo $susp_r[0] ?></label>
 							</div>
-							
 							<div class="form-group row">
 								<label class="col-form-label tab"> Case Id : <?php echo $susp_r[1] ?></label>
 							
@@ -184,7 +179,6 @@ $known_r = mysqli_fetch_array($run_known);
 							<div class="form-group row">
 								<label class="col-form-label tab"> Name : <?php echo $susp_r[2] ?></label>
 							</div>
-							
 							<div class="form-group row">
 								<label class="col-form-label tab"> Address : <?php echo $susp_r[3] ?></label>
 							</div>
@@ -199,16 +193,17 @@ $known_r = mysqli_fetch_array($run_known);
 								<label class="col-form-label tab"> Firearm Id : <?php echo $fire_r[0] ?></label>
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Lab Id : <?php echo $fire_r[1] ?></label>
+								<label class="col-form-label tab"> Case Id : <?php echo $fire_r[1] ?></label>
+							</div>
+							
+							<div class="form-group row">
+								<label class="col-form-label tab"> Seizing Officer : <?php echo $fire_r[2] ?></label>
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label tab"> Case Id : <?php echo $fire_r[2] ?></label>
-							</div>
+								<label class="col-form-label tab"> Make : <?php echo $fire_r[3] ?></label>
+							</div>	
 							<div class="form-group row">
-								<label class="col-form-label tab"> Seizing Officer : <?php echo $fire_r[3] ?></label>
-							</div>
-							<div class="form-group row">
-								<label class="col-form-label tab"> Make : <?php echo $fire_r[4] ?></label>
+								<label class="col-form-label tab"> Location : <?php echo $fire_r[4] ?></label>
 							</div>					
 		        </section>
 		        <section id="Known-Forensics">
