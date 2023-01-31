@@ -7,12 +7,7 @@
 	}
 
 ?>
-<style>
-.banner-area {
-  background: url(../img/header-bg.jpg) center;
-  background-size: cover;
-}
-</style>
+
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -42,7 +37,7 @@
 			<link rel="stylesheet" href="css/nice-select.css">					
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/main1.css">
 		</head>
 		<body>
 
@@ -60,24 +55,25 @@
 							<b><i><p style="color: white; text-shadow: 1px 1px 2px black, 0 0 45px green, 0 0 45px darkgreen;font-family: times, serif; font-size:75px;" class="text-white">
 								Forensic Evidence Management and Investigation System
 							</p></i></b>
-							<button type="button"  class="primary-btn text-uppercase btn-center" data-toggle="modal" data-target="#myModal"> Experts Login </button>
+							<br/>
+							<br/>
+							
+							<br/>
+							<button type="button"  class="primary-btn text float-center " data-toggle="modal" data-target="#myModal"> Admin Login </button>
 							<br/>
 							<br/>
 							<br/>
+							
 							<br/>
 							<br/>
+							
+							
+							<button type="button" class="primary-btn text float-right" data-toggle="modal" data-target="#myModal"> Experts Login </button>
 							<br/>
-							<br/>			
-							<br/>
-							<br/>
-							<button type="button" class="primary-btn text-uppercase float-right" data-toggle="modal" data-target="#myModal"> Officer Login </button>
-							<br/>
-							<br/>
+							
 							<br/>
 							<br/>
-							<br/>
-							<br/>
-							<button type="button" class="primary-btn text-uppercase float-right" data-toggle="modal" data-target="#myModal"> Admin Login </button>							
+							<button type="button" class="primary-btn text float-right" data-toggle="modal" data-target="#myModal"> Officer Login </button>							
 						
 							
 							<div class="modal fade" id="myModal" role="dialog">
